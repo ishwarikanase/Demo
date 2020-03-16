@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Add an expense</h2>
+<mat-dialog-content style="color: black;">
+    <p>
+        <mat-form-field appearance="legacy">
+            <mat-label>Enter a description:</mat-label>
+            <input matInput placeholder="Enter description">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="standard">
+            <mat-label>Total amount:</mat-label>
+            <input matInput placeholder="₹ 0.00">
+        </mat-form-field>
+    </p>
+    <p>Paid by <button>you</button> and split <button>equally</button>.</p>
+    <p style="text-align: center;">(₹ 0.00/person)</p>
+    <p>
+        <mat-form-field>
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </p>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close style="margin-left: 100px;margin-right: 10px;">Cancel</button>
+    <button mat button mat-dialog-close>Save</button>
+</mat-dialog-actions>

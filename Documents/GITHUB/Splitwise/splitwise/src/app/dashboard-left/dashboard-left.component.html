@@ -1,0 +1,18 @@
+<div class="sidebar">
+    <ul class="other">
+        <li><a routerLink="/dashboard">Dashboard</a></li>
+        <li><a routerLink="./recent">Recent activity</a></li>
+        <li><a routerLink="./all">All expenses</a></li>
+        <li>Groups
+            <ul class="nestedGroups">
+                <li (click)="onSelectGroup(group)" *ngFor="let group of groups"><a>{{group.name}}</a></li>
+            </ul>
+        </li>
+        <li>Friends
+            <ul class="nestedFriends">
+                <li (click)="onSelectFriend(friend)" *ngFor="let friend of friends"><a>{{friend.name}}</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,27 @@
+<header>
+    <nav class="navbar navbar-expand-lg" style="background-color: lightgray;width: 750px;">
+        <a class="navbar-brand"
+            style="color: black;margin-left: 20px;margin-right: 30px;margin-top: 5px;font-size:xx-large;">
+            <h3><b>{{dashboardHeader}}</b></h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav ml-auto">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link"
+                        style="color: white; border:1px solid white;margin-right: 10px;background-color:#ff652f;"
+                        (click)="openDialogExpense()">Add an expense</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                        style="color: white; border:1px solid white;margin-right:100px;background-color: #39a385;"
+                        (click)="openDialogSettle()">Settle up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
